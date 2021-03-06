@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_bg"
+    android:padding="30dp"
+    tools:context=".common.LoginSignup.Signup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/signup_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/muli_black"
+            android:text="Create\nAccount"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:transitionName="transition_title_text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/det_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableStart="@drawable/field_full_name_icon"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/muli_bold"
+                android:paddingStart="14dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/det_username"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableStart="@drawable/field_username_icon"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/muli_bold"
+                android:paddingStart="14dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/det_email"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableStart="@drawable/field_email_icon"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/muli_bold"
+                android:paddingStart="14dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/det_password"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableStart="@drawable/field_password_icon"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/muli_bold"
+                android:paddingStart="14dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/det_gender"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableStart="@drawable/gender"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/muli_bold"
+                android:paddingStart="14dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/det_dob"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableStart="@drawable/field_full_name_icon"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/muli_bold"
+                android:paddingStart="14dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/det_phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableStart="@drawable/field_phone_number_icon"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/muli_bold"
+                android:paddingStart="14dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/det_department"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableStart="@drawable/department_icon"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/muli_bold"
+                android:paddingStart="14dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/det_nationality"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableStart="@drawable/nationality"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/muli_bold"
+                android:paddingStart="14dp"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+        <Button
+
+            android:id="@+id/register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_bg"
+            android:elevation="5dp"
+            android:onClick="StoreData"
+            android:text="REGISTER"
+            android:textColor="@color/white"
+            android:transitionName="transition_next_btn" />
+
+
+    </LinearLayout>
+
+</ScrollView>

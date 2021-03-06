@@ -9,13 +9,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SplashScreen">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Admin.AdminDashboard"></activity>
+        <activity android:name=".Admin.AdminLogin" />
+        <activity android:name=".common.LoginSignup.SwitchWindow" />
+        <activity android:name=".User.UserDashboard" />
+        <activity android:name=".common.LoginSignup.Details" />
+        <activity android:name=".common.LoginSignup.VerifyOTP" />
+        <activity android:name=".common.LoginSignup.Signup3rdClass" />
+        <activity android:name=".common.LoginSignup.Signup2ndClass" />
+        <activity android:name=".common.LoginSignup.Signup" />
+        <activity android:name=".common.LoginSignup.Login" />
+        <activity android:name=".OnBoardingFragment3" />
+        <activity android:name=".OnBoardingFragment2" />
+        <activity android:name=".OnBoardingFragment1" />
+        <activity android:name=".common.LoginSignup.WelcomeScreen" />
+        <activity android:name=".IntroductoryActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
