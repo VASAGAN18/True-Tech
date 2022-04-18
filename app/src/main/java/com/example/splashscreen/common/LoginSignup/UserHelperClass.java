@@ -1,14 +1,14 @@
 package com.example.splashscreen.common.LoginSignup;
 
 public class UserHelperClass {
-    String FullName, Username, Email, Password, Gender, DOB, PhoneNo, Department, Nationality;
+    String FullName, Username, Email, Password, Gender, DOB, PhoneNo, State, Nationality;
 
 
     public UserHelperClass() {
 
     }
 
-    public UserHelperClass(String fullName, String username, String email, String password, String gender,String DOB, String phoneNo, String department, String nationality) {
+    public UserHelperClass(String fullName, String username, String email, String password, String gender,String DOB, String phoneNo, String state, String nationality) {
         FullName = fullName;
         Username = username;
         Email = email;
@@ -16,7 +16,7 @@ public class UserHelperClass {
         Gender = gender;
         this.DOB = DOB;
         PhoneNo = phoneNo;
-        Department = department;
+        State = state;
         Nationality = nationality;
 
     }
@@ -77,12 +77,12 @@ public class UserHelperClass {
         PhoneNo = phoneNo;
     }
 
-    public String getDepartment() {
-        return Department;
+    public String getState() {
+        return State;
     }
 
-    public void setDepartment(String department) {
-        Department = department;
+    public void setState(String state) {
+        State = state;
     }
 
     public String getNationality() {

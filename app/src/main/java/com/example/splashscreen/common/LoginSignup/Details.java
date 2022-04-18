@@ -1,9 +1,11 @@
 package com.example.splashscreen.common.LoginSignup;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,9 +15,9 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class Details extends AppCompatActivity {
 
-    TextView fullname, username, email, password, gender, date, phonenumber, department, nationality;
+    TextView fullname, username, email, password, gender, date, phonenumber, state, nationality;
     Button register;
-    String FullName, Username, Email, Password, Gender, DOB, PhoneNo, Department, Nationality;
+    String FullName, Username, Email, Password, Gender, DOB, PhoneNo, State, Nationality;
 
     FirebaseDatabase rootNode;
     DatabaseReference reference;
@@ -34,7 +36,7 @@ public class Details extends AppCompatActivity {
         gender = findViewById(R.id.det_gender);
         date = findViewById(R.id.det_dob);
         phonenumber = findViewById(R.id.det_phoneNumber);
-        department = findViewById(R.id.det_department);
+        state = findViewById(R.id.det_state);
         nationality = findViewById(R.id.det_nationality);
 
 
@@ -45,7 +47,7 @@ public class Details extends AppCompatActivity {
         Gender = getIntent().getStringExtra("radioGroup");
         DOB = getIntent().getStringExtra("month+\"/\"+ day +\"/\"+year");
         PhoneNo = getIntent().getStringExtra("phoneNo");
-        Department = getIntent().getStringExtra("department");
+        State = getIntent().getStringExtra("state");
         Nationality = getIntent().getStringExtra("nationality");
 
 
@@ -57,15 +59,22 @@ public class Details extends AppCompatActivity {
         date.setText(DOB);
         phonenumber.setText(PhoneNo);
         nationality.setText(Nationality);
-        department.setText(Department);
+        state.setText(State);
 
 
     }
+
     public void StoreData(View view) {
         rootNode = FirebaseDatabase.getInstance();
         reference = rootNode.getReference("Users");
 
-        UserHelperClass helperClass = new UserHelperClass(FullName, Username, Email, Password, Gender, DOB, PhoneNo, Department, Nationality);
+
+        UserHelperClass helperClass = new UserHelperClass(FullName, Username, Email, Password, Gender, DOB, PhoneNo, State, Nationality);
+        //After storing datas,moving to login screen//
+        Intent intent = new Intent(getApplicationContext(),Login.class);
+        startActivity(intent);
+        finish();
+        Toast.makeText(this, "Registered successfully!", Toast.LENGTH_SHORT).show();
 
         reference.child(Username).setValue(helperClass);
 

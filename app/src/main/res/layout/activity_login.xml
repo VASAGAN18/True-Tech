@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/muli_black"
-            android:text="Login"
+            android:text="USER\nLogin"
             android:textAllCaps="true"
             android:textColor="@color/black"
             android:textSize="40sp" />
@@ -27,7 +27,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="150dp"
             android:orientation="vertical">
 
 
@@ -108,12 +108,12 @@
 
             <Button
                 android:id="@+id/UserLogin"
-                android:onClick="letTheUserLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/forget_password_block"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="80dp"
                 android:background="@drawable/button_bg"
+                android:onClick="letTheUserLogin"
                 android:text="LOGIN"
                 android:textColor="@color/white" />
 
@@ -128,11 +128,25 @@
                 android:onClick="callSignupscreen"
                 android:text="CREATE ACCOUNT " />
 
+            <RelativeLayout
+                android:id="@+id/user_progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/progress_circle"
+                android:elevation="8dp"
+                android:padding="20dp"
+                android:visibility="gone">
 
-
+                <ProgressBar
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true" />
 
             </RelativeLayout>
 
+
+        </RelativeLayout>
 
 
     </LinearLayout>

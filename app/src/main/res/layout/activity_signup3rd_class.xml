@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".common.LoginSignup.Signup3rdClass"
-    android:background="@drawable/welcome_bg"
+    android:background="@drawable/white_bg"
     android:padding="30dp">
 
     <LinearLayout
@@ -32,28 +32,30 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="40dp">
+            android:layout_marginTop="80dp">
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/department"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Department"
+                android:hint="State"
+                android:id="@+id/state"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 app:startIconDrawable="@drawable/department_icon"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 app:startIconTint="@color/black"
                 app:hintTextColor="@color/black"
                 android:textColorHint="@color/black"
                 app:endIconMode="clear_text"
                 app:endIconTint="@color/black"
                 app:boxStrokeWidthFocused="2dp"
-                app:boxStrokeColor="@color/black">
+                app:boxStrokeColor="@color/black"
+                >
 
-                <com.google.android.material.textfield.TextInputEditText
+                <AutoCompleteTextView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:inputType="text"/>
+                    android:layout_height="wrap_content"
+                    android:id="@+id/actv"/>
+
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -61,6 +63,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Nationality"
+                android:fontFamily="@font/raleway"
                 app:startIconDrawable="@drawable/field_full_name_icon"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 app:startIconTint="@color/black"
@@ -82,6 +85,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Phone Number"
+                android:fontFamily="@font/raleway"
                 app:endIconMode="clear_text"
                 app:startIconDrawable="@drawable/field_phone_number_icon"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -109,9 +113,10 @@
             android:layout_width="match_parent"
             android:onClick="callDetailsScreen"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="80dp"
             android:background="@drawable/button_bg"
             android:elevation="5dp"
+            android:fontFamily="@font/raleway"
             android:text="NEXT"
             android:textColor="@color/white"
             android:transitionName="transition_next_btn" />

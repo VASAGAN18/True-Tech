@@ -1,10 +1,10 @@
 package com.example.splashscreen;
 
 import android.os.Bundle;
-import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,6 +18,7 @@ import com.airbnb.lottie.LottieAnimationView;
 public class IntroductoryActivity extends AppCompatActivity {
 
     ImageView logo, appName, booksImg;
+    TextView splash_version_txt;
     LottieAnimationView lottieAnimationView;
 
     private static final int NUM_PAGES = 3;
@@ -89,3 +90,4 @@ public class IntroductoryActivity extends AppCompatActivity {
         }
     }
         }
+

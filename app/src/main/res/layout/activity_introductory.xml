@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,59 +9,78 @@
 
     <ImageView
         android:id="@+id/image"
-        android:elevation="2dp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="900dp"
-        android:src="@drawable/bg"
-        app:layout_constraintVertical_bias="0"
+        android:elevation="2dp"
         android:scaleType="centerCrop"
+        android:src="@drawable/white_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/logo"
+        android:layout_marginTop="95dp"
         android:elevation="2dp"
-        app:layout_constraintVertical_bias=".1"
+        android:src="@drawable/ttlogo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".1" />
 
     <ImageView
         android:id="@+id/app_name"
         android:layout_width="300dp"
-        android:elevation="2dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/stutracker"
-        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="50dp"
+        android:elevation="2dp"
+        android:src="@drawable/ttlogoname"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo" />
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="0" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie"
-        android:elevation="2dp"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:elevation="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/app_name"
         app:layout_constraintVertical_bias="0"
         app:lottie_autoPlay="true"
-        app:lottie_rawRes="@raw/books" />
+        app:lottie_rawRes="@raw/shopping_anime" />
+
+    <TextView
+        android:id="@+id/splash_version_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="v1.1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottie"
+        android:padding="40dp"
+        />
+
 
     <com.cuberto.liquid_swipe.LiquidPager
         android:id="@+id/pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

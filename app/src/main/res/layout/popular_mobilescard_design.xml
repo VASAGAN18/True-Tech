@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="350dp"
+    android:layout_height="200dp"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:elevation="8dp"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/popular_mobiles_image"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/samsung_m5"
+
+            />
+
+        <TextView
+            android:id="@+id/popular_mobiles_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/popular_mobiles_image"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="Samsung M52"
+            android:textSize="20dp"
+
+            />
+
+        <RatingBar
+            android:id="@+id/popular_mobiles_rating"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/popular_mobiles_title"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/popular_mobiles_image"
+            android:numStars="5"
+            android:rating="5"
+            android:stepSize=".5"
+            android:theme="@style/RatingBar" />
+
+        <TextView
+            android:id="@+id/popular_mobiles_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/popular_mobiles_rating"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/popular_mobiles_image"
+            android:text="M.R.P : ₹25,999.00\n8GB RAM, 128GB Storage\nQualcomm SDM 778G Octa Core 2.4GHz" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

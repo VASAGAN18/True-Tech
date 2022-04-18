@@ -1,18 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.splashscreen">
+    package="com.example.splashscreen" >
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@drawable/ttlogo"
+        android:label="TrueTech"
+        android:roundIcon="@drawable/ttlogo"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SplashScreen">
-        <activity android:name=".Admin.AdminDashboard"></activity>
+        android:theme="@style/Theme.SplashScreen" >
+        <activity android:name=".OwnerDashboard" />
+        <activity android:name=".CustomerDash" />
+        <activity android:name=".Admin.AdminTimetable" />
+        <activity android:name=".User.UserTimetable" />
+        <activity android:name=".User.viewattendancepage" />
+        <activity android:name=".User.AttendanceScreen" />
+        <activity android:name=".User.UserProfile" />
+        <activity android:name=".Server.admin_profile" />
+        <activity android:name=".Admin.fac_viewattendance_bydate" />
+        <activity android:name=".Admin.fac_attenview_mid2" />
+        <activity android:name=".Admin.takeattendancefinalbyfaculty" />
+        <activity android:name=".Admin.fac_create_new_attendencesheet" />
+        <activity android:name=".Admin.backlogstdregisteration_tosubject" />
+        <activity android:name=".Admin.facview_atten_mid1" />
+        <activity android:name=".Admin.factakeatn_midpage" />
+        <activity android:name=".Server.batchnamecreate" />
+        <activity android:name=".Server.collective_batch_creation_mid1" />
+        <activity android:name=".about_app" />
+        <activity android:name=".Admin.facultyprofile" />
+        <activity android:name=".Server.baclog_reg_by_admin" />
+        <activity android:name=".Server.addsubjectbyadmin" />
+        <activity android:name=".Server.removestudent" />
+        <activity android:name=".Server.addstudent" />
+        <activity android:name=".Server.removefaculty" />
+        <activity android:name=".Server.addfaculty" />
+        <activity android:name=".Server.ServerDashboard" />
+        <activity android:name=".Server.ServerLogin" />
+        <activity android:name=".Admin.AdminDashboard" />
         <activity android:name=".Admin.AdminLogin" />
         <activity android:name=".common.LoginSignup.SwitchWindow" />
-        <activity android:name=".User.UserDashboard" />
+        <activity android:name=".User.UserDashboard"/>
         <activity android:name=".common.LoginSignup.Details" />
         <activity android:name=".common.LoginSignup.VerifyOTP" />
         <activity android:name=".common.LoginSignup.Signup3rdClass" />
@@ -23,14 +50,16 @@
         <activity android:name=".OnBoardingFragment2" />
         <activity android:name=".OnBoardingFragment1" />
         <activity android:name=".common.LoginSignup.WelcomeScreen" />
-        <activity android:name=".IntroductoryActivity">
+
+        <activity android:name=".IntroductoryActivity" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        <activity android:name=".MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

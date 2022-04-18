@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Admin.facultyprofile">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_imageview"
+        android:layout_gravity="center"
+        android:src="@drawable/profile_nav_logo"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:civ_border_width="3dp"
+        app:civ_border_color="#FCFCFC"/>
+
+    <LinearLayout
+        android:background="@drawable/black_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/det_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:drawableStart="@drawable/field_full_name_icon"
+            android:drawableTint="@color/black"
+            android:fontFamily="@font/muli_bold"
+            android:paddingStart="14dp"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/det_username"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:drawableStart="@drawable/field_username_icon"
+            android:drawableTint="@color/black"
+            android:fontFamily="@font/muli_bold"
+            android:paddingStart="14dp"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <Button
+
+        android:id="@+id/upload_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bg"
+        android:elevation="5dp"
+        android:text="UPLOAD"
+        android:textColor="@color/white"
+        android:transitionName="transition_next_btn" />
+
+
+
+</LinearLayout>

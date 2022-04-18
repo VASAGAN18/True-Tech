@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/welcome_bg"
+    android:background="@drawable/white_bg"
     android:padding="30dp"
     tools:context=".common.LoginSignup.Signup">
 
@@ -104,7 +104,7 @@
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/det_department"
+                android:id="@+id/det_state"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:drawableStart="@drawable/department_icon"

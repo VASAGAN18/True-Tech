@@ -14,56 +14,60 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="match_parent"
+            android:layout_width="330dp"
             android:layout_height="200dp"
-            android:src="@drawable/logo1" />
+            android:src="@drawable/logowithlogoname" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="120dp"
-            android:fontFamily="@font/muli_black"
-            android:text="Welcome to StuHub"
+            android:fontFamily="@font/raleway"
+            android:text="TrueTech Welcomes You"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="36sp" />
+            android:textSize="30sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:fontFamily="@font/muli_light"
-            android:text="We will help you to provide Details"
+            android:fontFamily="@font/raleway"
+            android:layout_marginTop="10dp"
+            android:text="Find Your Dream Mobile"
             android:textAlignment="center"
             android:textColor="@color/black" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp">
+            android:layout_marginTop="80dp"
+            android:orientation="vertical"
+            >
 
             <Button
                 android:id="@+id/login_btn"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_weight="1"
                 android:onClick="callLoginScreen"
                 android:layout_height="wrap_content"
                 android:text="Login"
+                android:fontFamily="@font/raleway"
                 android:textColor="@color/white"
-                android:layout_marginRight="10dp"
                 android:background="@drawable/button_bg"
                 android:transitionName="transition_login"/>
 
             <Button
                 android:id="@+id/signup_btn"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_weight="1"
                 android:onClick="callSignupscreen"
                 android:layout_height="wrap_content"
                 android:text="SignUp"
+                android:fontFamily="@font/raleway"
+                android:layout_marginTop="15dp"
                 android:textColor="@color/white"
-                android:layout_marginLeft="10dp"
                 android:background="@drawable/button_bg"/>
         </LinearLayout>
     </LinearLayout>

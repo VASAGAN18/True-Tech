@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Pair;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,7 +18,8 @@ public class Signup3rdClass extends AppCompatActivity {
 
 
     Button next;
-    TextInputLayout phoneNumber, department, nationality;
+    TextInputLayout phoneNumber, state, nationality;
+    AutoCompleteTextView actv;
 
 
     @Override
@@ -27,8 +30,13 @@ public class Signup3rdClass extends AppCompatActivity {
 
         next = findViewById(R.id.next_btn);
         phoneNumber = findViewById(R.id.phone_number);
-        department = findViewById(R.id.department);
         nationality = findViewById(R.id.nationality);
+        actv = findViewById(R.id.actv);
+        state = findViewById(R.id.state);
+
+        String state[] = getResources().getStringArray(R.array.state);
+        ArrayAdapter arrayAdapter = new ArrayAdapter(Signup3rdClass.this, R.layout.dropdown, state);
+        actv.setAdapter(arrayAdapter);
 
 
     }
@@ -51,7 +59,7 @@ public class Signup3rdClass extends AppCompatActivity {
         String _phoneNumber = phoneNumber.getEditText().getText().toString().trim();
         String _phoneNo = "+91" + _phoneNumber;
         String _nationality = nationality.getEditText().getText().toString();
-        String _department = department.getEditText().getText().toString();
+        String _state = state.getEditText().getText().toString();
 
 
         Intent intent = new Intent(getApplicationContext(), Details.class);
@@ -63,7 +71,7 @@ public class Signup3rdClass extends AppCompatActivity {
         intent.putExtra("radioGroup", _gender);
         intent.putExtra("phoneNo", _phoneNo);
         intent.putExtra("nationality", _nationality);
-        intent.putExtra("department", _department);
+        intent.putExtra("state", _state);
         intent.putExtra("month+\"/\"+ day +\"/\"+year", _DOB);
 
 
@@ -95,14 +103,14 @@ public class Signup3rdClass extends AppCompatActivity {
     }
 
     private boolean validateDepartment() {
-        String val = department.getEditText().getText().toString().trim();
+        String val = state.getEditText().getText().toString().trim();
 
         if (val.isEmpty()) {
-            department.setError("Field can not be empty!");
+            state.setError("Field can not be empty!");
             return false;
         } else {
-            department.setError(null);
-            department.setEnabled(false);
+            state.setError(null);
+            state.setEnabled(false);
             return true;
         }
 

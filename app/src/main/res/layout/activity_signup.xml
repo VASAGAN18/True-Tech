@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".common.LoginSignup.Signup"
-    android:background="@drawable/welcome_bg"
-    android:padding="30dp">
+    android:padding="30dp"
+    tools:context=".common.LoginSignup.Signup">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,112 +13,118 @@
         android:orientation="vertical">
 
 
-
-
         <TextView
             android:id="@+id/signup_title_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/muli_black"
             android:text="Create\nAccount"
+            android:textAllCaps="true"
             android:textColor="@color/black"
             android:textSize="40sp"
-            android:transitionName="transition_title_text"
-            android:fontFamily="@font/muli_black"
-            android:textAllCaps="true"
-            android:layout_marginTop="20dp"/>
+            android:transitionName="transition_title_text" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
             android:orientation="vertical"
-            android:layout_marginTop="40dp">
+
+            >
 
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/signup_fullname"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter Full Name"
-                app:startIconDrawable="@drawable/field_full_name_icon"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                app:startIconTint="@color/black"
-                app:hintTextColor="@color/black"
                 android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
                 app:endIconMode="clear_text"
                 app:endIconTint="@color/black"
-                app:boxStrokeWidthFocused="2dp"
-                app:boxStrokeColor="@color/black">
+                app:hintTextColor="@color/black"
+                app:startIconDrawable="@drawable/field_full_name_icon"
+                app:startIconTint="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:inputType="text"/>
+                    android:inputType="text"
+                    android:fontFamily="@font/raleway"
+                    />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/signup_username"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Username  (Roll number)"
-                app:startIconDrawable="@drawable/field_username_icon"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                app:startIconTint="@color/black"
-                app:hintTextColor="@color/black"
+                android:hint="Username"
                 android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
                 app:endIconMode="clear_text"
                 app:endIconTint="@color/black"
-                app:boxStrokeWidthFocused="2dp"
-                app:boxStrokeColor="@color/black">
+                app:hintTextColor="@color/black"
+                app:startIconDrawable="@drawable/field_username_icon"
+                app:startIconTint="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:inputType="text"/>
+                    android:inputType="text"
+                    android:fontFamily="@font/raleway"
+                    />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/signup_email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Email"
-                app:startIconDrawable="@drawable/field_email_icon"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                app:startIconTint="@color/black"
-                app:hintTextColor="@color/black"
                 android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
                 app:endIconMode="clear_text"
                 app:endIconTint="@color/black"
-                app:boxStrokeWidthFocused="2dp"
-                app:boxStrokeColor="@color/black">
+                app:hintTextColor="@color/black"
+                app:startIconDrawable="@drawable/field_email_icon"
+                app:startIconTint="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:inputType="textEmailAddress"/>
+                    android:inputType="textEmailAddress"
+                    android:fontFamily="@font/raleway"
+                    />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/signup_password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Password"
-                app:startIconDrawable="@drawable/field_password_icon"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                app:startIconTint="@color/black"
-                app:hintTextColor="@color/black"
                 android:textColorHint="@color/black"
-                app:passwordToggleTint="@color/black"
-                app:passwordToggleEnabled="true"
+                app:boxStrokeColor="@color/black"
                 app:boxStrokeWidthFocused="2dp"
-                app:boxStrokeColor="@color/black">
+                app:hintTextColor="@color/black"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/black"
+                app:startIconDrawable="@drawable/field_password_icon"
+                app:startIconTint="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:inputType="textPassword"/>
+                    android:inputType="textPassword"
+                    android:fontFamily="@font/raleway"
+                    />
             </com.google.android.material.textfield.TextInputLayout>
-
-
 
 
         </LinearLayout>
@@ -128,28 +133,27 @@
             android:id="@+id/signup_next_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="NEXT"
+            android:layout_marginTop="80dp"
             android:background="@drawable/button_bg"
-            android:textColor="@color/white"
-            android:layout_marginTop="20dp"
             android:elevation="5dp"
             android:onClick="callNextSignupScreen"
-            android:transitionName="transition_next_btn"
-            />
+            android:text="NEXT"
+            android:fontFamily="@font/raleway"
+            android:textColor="@color/white"
+            android:transitionName="transition_next_btn" />
 
         <Button
             android:id="@+id/signup_login_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="LOGIN"
-            android:onClick="callLoginScreen"
-            android:background="#00000000"
-            android:textColor="@color/black"
-            android:fontFamily="@font/muli"
             android:layout_marginTop="20dp"
+            android:background="#00000000"
             android:elevation="5dp"
-            android:transitionName="transition_login_btn"
-            />
+            android:fontFamily="@font/raleway"
+            android:onClick="callLoginScreen"
+            android:text="LOGIN"
+            android:textColor="@color/black"
+            android:transitionName="transition_login_btn" />
 
     </LinearLayout>
 

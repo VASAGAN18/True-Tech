@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "131824632875",
+    "project_id": "stuhub-2de9d",
+    "storage_bucket": "stuhub-2de9d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131824632875:android:96b939e0a6836a6b4a966e",
+        "android_client_info": {
+          "package_name": "com.example.splashscreen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "131824632875-c859j4k0cjuag3cg91vuec26cs4c35hf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7AgqvUb2Zy6I8gde6SNn9WEqxnieWVD4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "131824632875-c859j4k0cjuag3cg91vuec26cs4c35hf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -21,8 +21,8 @@ public class SwitchWindow extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_switch_window);
 
-        teacher = findViewById(R.id.Teacher_login);
-        student = findViewById(R.id.Student_login);
+        teacher = findViewById(R.id.Admin_login);
+        student = findViewById(R.id.User_login);
     }
 
     public void callWelcomeScreen(View view) {
@@ -30,7 +30,7 @@ public class SwitchWindow extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), WelcomeScreen.class);
 
         Pair[] pairs = new Pair[1];
-        pairs[0] = new Pair<View, String>(findViewById(R.id.Student_login), "transition_login");
+        pairs[0] = new Pair<View, String>(findViewById(R.id.User_login), "transition_login");
 
         ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(SwitchWindow.this, pairs);
         startActivity(intent, options.toBundle());
@@ -41,7 +41,7 @@ public class SwitchWindow extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), AdminLogin.class);
 
         Pair[] pairs = new Pair[1];
-        pairs[0] = new Pair<View, String>(findViewById(R.id.Teacher_login), "transition_login");
+        pairs[0] = new Pair<View, String>(findViewById(R.id.Admin_login), "transition_login");
 
         ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(SwitchWindow.this, pairs);
         startActivity(intent, options.toBundle());

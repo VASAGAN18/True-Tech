@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/baloo</item>
         <item>@font/baloo_chettan</item>
         <item>@font/bubblegum_sans</item>
         <item>@font/muli</item>
         <item>@font/muli_black</item>
         <item>@font/muli_bold</item>
         <item>@font/muli_light</item>
+        <item>@font/quicksand</item>
+        <item>@font/quicksand_medium</item>
+        <item>@font/raleway</item>
     </array>
 </resources>

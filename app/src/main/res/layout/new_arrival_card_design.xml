@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="160dp"
+    android:layout_height="300dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/newarrival_cardImage"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/oneplus_9r" />
+
+        <TextView
+            android:id="@+id/newarrival_cardTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="Oneplus 9R 5G"
+            android:textColor="@color/p1c7"
+            android:textSize="12sp"
+
+            />
+
+        <RatingBar
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="3.5"
+            android:numStars="5"
+            android:stepSize=".5"
+            android:theme="@style/RatingBar"
+            />
+        <TextView
+            android:id="@+id/newarrival_cardDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="M.R.P : ₹36,999.00\n8GB RAM, 128GB Storage\nQualcomm Snapdragon 870"
+
+            />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

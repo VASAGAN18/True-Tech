@@ -11,6 +11,24 @@
     <color name="blue">#88bef5</color>
     <color name="lightWhite">#EEEBEB</color>
     <color name="yellow">#FDEA3D</color>
+    <color name="violet">#916BBF</color>
+    <color name="light_purple">#CAB8FF</color>
+
+<!--    pallette 1-->
+    <color name="p1c1">#C490E4</color>
+    <color name="p1c2">#F6C6EA</color>
+    <color name="p1c3">#F9F9F9</color>
+    <color name="p1c4">#CDF0EA</color>
+    <color name="p1c5">#CAF7E3</color>
+    <color name="p1c6">#6E7C7C</color>
+    <color name="p1c7">#212121</color>
+    <color name="p1c8">#F7FD04</color>
+
+<!--pallette 2-->
+    <color name="p2c1">#BEDCFA</color>
+    <color name="p2c2">#B088F9</color>
+    <color name="p2c3">#E1F2FB</color>
+
 
 
 </resources>
